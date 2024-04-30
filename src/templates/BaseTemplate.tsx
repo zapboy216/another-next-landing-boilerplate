@@ -34,11 +34,10 @@ const BaseTemplate = (props: {
               </ul>
             </nav>
           </div>
-          <div className="pt-8">
-            <h1 className="text-3xl font-bold text-gray-900">
+          <div className="animate-fade-in pt-8">
+            <h1 className="text-4xl font-bold text-gray-900">
               {AppConfig.name}
             </h1>
-            <h2 className="text-xl">{t('description')}</h2>
           </div>
         </header>
 

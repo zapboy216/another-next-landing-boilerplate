@@ -9,8 +9,8 @@ const emailChannel = new EmailAlertChannel('email-channel-1', {
 });
 
 export const config = defineConfig({
-  projectName: 'Next.js Boilerplate',
-  logicalId: 'nextjs-boilerplate',
+  projectName: 'DinanWeb',
+  logicalId: 'dinan web',
   repoUrl: 'https://github.com/zapboy216/Next-js-Boilerplate',
   checks: {
     locations: ['us-east-1', 'eu-west-1'],

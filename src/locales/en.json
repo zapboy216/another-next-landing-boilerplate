@@ -8,13 +8,13 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "description": "Boilerplate with an AI CoPilot",
+    "description": "DinanWebBase",
     "made_with": "Made with"
   },
   "Index": {
-    "meta_title": "Next.js Boilerplate Presentation",
-    "meta_description": "Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework.",
-    "video_url": "https://storage.googleapis.com/dinan/videos/AdobeStock_231155339_Video_4K_Preview.mp4"
+    "meta_title": "DinanWebIndex",
+    "meta_description": "Freelance web developers",
+    "hero_image_url": "https://storage.googleapis.com/dinan/images/art/work/med15.png"
   },
   "Guestbook": {
     "meta_title": "Guestbook",
