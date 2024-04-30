@@ -121,6 +121,9 @@
   animation: fadeIn 3s ease-in-out forwards;  /* Adjusted for a slower fade-in */
 }
 
+# main {
+  margin-top: 0;
+}
 
   
 

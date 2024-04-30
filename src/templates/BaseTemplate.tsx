@@ -17,9 +17,14 @@ const BaseTemplate = (props: {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className="w-full px-20 py-10 text-gray-700 antialiased">
+    <div className="w-full px-20 text-gray-700 antialiased">
       <div className="mx-auto max-w-screen-md lg:max-w-full">
         <header className="px-10">
+          <div className="animate-fade-in pt-8">
+            <h1 className="text-4xl font-bold text-gray-900">
+              {AppConfig.name}
+            </h1>
+          </div>
           <div className="flex items-center justify-between">
             <HamburgerMenu isOpen={isMenuOpen} toggle={toggleMenu} />
             <nav className={`${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
@@ -33,11 +38,6 @@ const BaseTemplate = (props: {
                 {props.rightNav}
               </ul>
             </nav>
-          </div>
-          <div className="animate-fade-in pt-8">
-            <h1 className="text-4xl font-bold text-gray-900">
-              {AppConfig.name}
-            </h1>
           </div>
         </header>
 
