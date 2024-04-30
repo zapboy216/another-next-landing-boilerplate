@@ -3,6 +3,7 @@
 'use client';
 
 import { Menu, X } from 'lucide-react';
+import React from 'react';
 
 interface HamburgerMenuProps {
   isOpen: boolean;
@@ -12,6 +13,7 @@ interface HamburgerMenuProps {
 const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggle }) => {
   return (
     <button
+      type="button"
       className="block p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring lg:hidden"
       onClick={toggle}
       aria-label="Toggle navigation"
