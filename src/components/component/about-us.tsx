@@ -18,7 +18,7 @@ export function AboutUs() {
             <Button size="lg" variant="solid">
               Learn More
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="solid">
               Contact Us
             </Button>
           </div>
