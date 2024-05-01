@@ -9,10 +9,10 @@ export function AboutUs() {
       <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[#EC4899]">
         <div className="container flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
           <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl">
-            About Us
+            maybe
           </h1>
           <p className="mb-8 max-w-3xl text-xl md:text-2xl">
-            {t(about_paragraph)}
+            {t('about_paragraph')}
           </p>
           <div className="flex gap-4">
             <Button size="lg" variant="solid">
@@ -44,24 +44,21 @@ export function AboutUs() {
               <RocketIcon className="mb-4 size-12 text-[#6366F1]" />
               <h3 className="mb-2 text-2xl font-bold">Innovation</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We are constantly pushing the boundaries of what's possible,
-                always seeking new and innovative solutions.
+                {t('about_paragraph_two')}
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <PaletteIcon className="mb-4 size-12 text-[#EC4899]" />
               <h3 className="mb-2 text-2xl font-bold">Design</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Our team of talented designers create visually stunning and
-                user-friendly interfaces.
+                {t('about_paragraph_three')}
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <CodeIcon className="mb-4 size-12 text-[#34D399]" />
               <h3 className="mb-2 text-2xl font-bold">Development</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We build robust and scalable applications using the latest
-                technologies and best practices.
+                {t('about_paragraph_four')}
               </p>
             </div>
           </div>
@@ -73,18 +70,10 @@ export function AboutUs() {
             <div>
               <h2 className="mb-4 text-4xl font-bold">Our Story</h2>
               <p className="mb-8 text-gray-500 dark:text-gray-400">
-                Founded in 2015, our company has grown to become a leading
-                provider of innovative digital solutions. Our mission is to
-                empower businesses and individuals to achieve their goals
-                through cutting-edge technology and design.
+                {t('about_paragraph_five')}
               </p>
               <p className="mb-8 text-gray-500 dark:text-gray-400">
-                Over the years, we've worked with a diverse range of clients,
-                from startups to Fortune 500 companies, helping them to
-                transform their digital presence and drive growth. Our team of
-                passionate experts is dedicated to delivering exceptional
-                results, and we take pride in our ability to consistently exceed
-                our clients' expectations.
+                {t('about_paragraph_six')}
               </p>
               <Button variant="solid">Meet the Team</Button>
             </div>
