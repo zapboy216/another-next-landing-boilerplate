@@ -1,6 +1,9 @@
+import { useTranslations } from 'next-intl';
+
 import { Button } from '@/components/ui/button';
 
 export function AboutUs() {
+  const t = useTranslations('About');
   return (
     <>
       <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[#EC4899]">
@@ -9,8 +12,7 @@ export function AboutUs() {
             About Us
           </h1>
           <p className="mb-8 max-w-3xl text-xl md:text-2xl">
-            We are a dynamic team of designers, developers and innovators,
-            driven to create exceptional digital experiences.
+            {t(about_paragraph)}
           </p>
           <div className="flex gap-4">
             <Button size="lg" variant="solid">
