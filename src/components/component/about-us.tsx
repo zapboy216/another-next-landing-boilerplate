@@ -8,7 +8,7 @@ export function AboutUs() {
     <>
       <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[#EC4899]">
         <div className="container flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
-          <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl">
+          <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl">
             maybe
           </h1>
           <p className="mb-8 max-w-3xl text-xl md:text-2xl">
