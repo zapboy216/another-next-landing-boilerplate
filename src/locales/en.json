@@ -14,7 +14,13 @@
   "Index": {
     "meta_title": "Dinan Web",
     "meta_description": "Freelance web developers in South Florida",
-    "hero_image_url": "https://storage.googleapis.com/dinan/dinanweb/Artboard%201.png"
+    "hero_image_url": "https://storage.googleapis.com/dinan/dinanweb/Artboard%201.png",
+    "paragraph_one": "Innovative Web Solutions, Exceptional Expertise",
+    "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
+    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "label": "Introducing",
+    "heading": "A Freelance Software Development Firm"
   },
   "Guestbook": {
     "meta_title": "Guestbook",
