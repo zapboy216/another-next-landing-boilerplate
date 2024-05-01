@@ -36,10 +36,10 @@
   "About": {
     "meta_title": "About",
     "meta_description": "About page description",
-    "about_paragraph": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
-    "about_paragraph_two": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
-    "about_paragraph_three": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
-    "about_paragraph_four": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
+    "about_paragraph": "We are a dynamic team of designers, developers and innovators, driven to create exceptional digital experiences.",
+    "about_paragraph_two": "We are constantly pushing the boundaries of what's possible,always seeking new and innovative solutions.",
+    "about_paragraph_three": "Our team of talented designers create visually stunning and user-friendly interfaces.",
+    "about_paragraph_four": "We build robust and scalable applications using the latest technologies and best practices.",
     "translation_powered_by": "Translation powered by"
   },
   "Portfolio": {
