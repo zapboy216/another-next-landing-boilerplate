@@ -68,7 +68,9 @@ export function AboutUs() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
-              <h2 className="mb-4 text-4xl font-bold">Our Story</h2>
+              <h2 className="mb-4 text-4xl font-bold">
+                {t('paragraph_heading')}
+              </h2>
               <p className="mb-8 text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_five')}
               </p>
