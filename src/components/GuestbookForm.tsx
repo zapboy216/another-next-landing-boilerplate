@@ -60,16 +60,16 @@ const GuestbookForm = (props: IGuestbookFormProps) => {
   });
 
   return (
-    <form onSubmit={handleCreate}>
+    <form onSubmit={handleCreate} className="space-y-4">
       <div>
         <label
-          className="text-sm font-bold text-gray-700"
+          className="mb-1 block font-medium text-gray-700 dark:text-gray-300"
           htmlFor={`username${props.edit ? `-${props.id}` : ''}`}
         >
           {t('username')}
           <input
             id={`username${props.edit ? `-${props.id}` : ''}`}
-            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+            className="w-full rounded-lg px-4 py-3 shadow-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#9370DB]"
             {...register('username')}
           />
         </label>
@@ -80,15 +80,15 @@ const GuestbookForm = (props: IGuestbookFormProps) => {
         )}
       </div>
 
-      <div className="mt-3">
+      <div>
         <label
-          className="text-sm font-bold text-gray-700"
+          className="mb-1 block font-medium text-gray-700 dark:text-gray-300"
           htmlFor={`body${props.edit ? `-${props.id}` : ''}`}
         >
           {t('body')}
           <input
             id={`body${props.edit ? `-${props.id}` : ''}`}
-            className="mt-2 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none focus:ring focus:ring-blue-300/50"
+            className="w-full rounded-lg px-4 py-3 shadow-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#9370DB]"
             {...register('body')}
           />
         </label>
@@ -99,9 +99,9 @@ const GuestbookForm = (props: IGuestbookFormProps) => {
         )}
       </div>
 
-      <div className="mt-5">
+      <div>
         <button
-          className="rounded bg-blue-500 px-5 py-1 font-bold text-white hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300/50"
+          className="w-full rounded-lg bg-[#9370DB] px-6 py-3 font-medium text-white shadow-md hover:bg-[#8258FA] focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#8258FA]"
           type="submit"
         >
           {t('save')}
