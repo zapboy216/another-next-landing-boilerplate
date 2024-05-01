@@ -18,14 +18,14 @@ export function AboutUs() {
             <Button
               size="lg"
               variant="ghost"
-              className="border-black-500 text-1xl border p-5"
+              className="border-black-500 text-1xl border px-5 py-7"
             >
               Learn More
             </Button>
             <Button
               size="lg"
               variant="solid"
-              className="border-black-500 text-1xl border p-5"
+              className="border-black-500 text-1xl border px-5 py-7"
             >
               Contact Us
             </Button>
