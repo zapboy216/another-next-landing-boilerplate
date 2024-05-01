@@ -6,7 +6,7 @@ export function AboutUs() {
   const t = useTranslations('About');
   return (
     <>
-      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[#EC4899]">
+      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[rgb(19,94,32)]">
         <div className="container flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
           <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl">
             maybe
@@ -85,7 +85,9 @@ export function AboutUs() {
               <p className="mb-8 text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_six')}
               </p>
-              <Button variant="solid">Meet the Team</Button>
+              <Button variant="ghost" className="border border-black text-2xl">
+                Meet the Team
+              </Button>
             </div>
             <div className="flex items-center justify-center">
               <img
