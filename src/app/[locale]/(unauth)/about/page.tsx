@@ -22,6 +22,9 @@ export default function About() {
     <>
       <AboutUs />
       <p>{t('about_paragraph')}</p>
+      <p>{t('about_paragraph_two')}</p>
+      <p>{t('about_paragraph_three')}</p>
+      <p>{t('about_paragraph_four')}</p>
     </>
   );
 }
