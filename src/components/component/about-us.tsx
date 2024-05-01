@@ -56,7 +56,7 @@ export function AboutUs() {
             </div>
             <div className="flex flex-col items-center text-center">
               <CodeIcon className="mb-4 size-12 text-[#34D399]" />
-              <h3 className="mb-2 text-2xl font-bold">Development</h3>
+              <h3 className="mb-2 text-2xl font-bold">{t('heading_three')}</h3>
               <p className="text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_four')}
               </p>
