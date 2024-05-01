@@ -15,10 +15,18 @@ export function AboutUs() {
             {t('about_paragraph')}
           </p>
           <div className="flex gap-4">
-            <Button size="lg" variant="solid">
+            <Button
+              size="lg"
+              variant="ghost"
+              className="border-black-500 border"
+            >
               Learn More
             </Button>
-            <Button size="lg" variant="solid">
+            <Button
+              size="lg"
+              variant="solid"
+              className="border-black-500 border"
+            >
               Contact Us
             </Button>
           </div>
