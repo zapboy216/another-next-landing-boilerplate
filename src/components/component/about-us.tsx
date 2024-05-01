@@ -42,14 +42,14 @@ export function AboutUs() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center text-center">
               <RocketIcon className="mb-4 size-12 text-[#6366F1]" />
-              <h3 className="mb-2 text-2xl font-bold">Innovations</h3>
+              <h3 className="mb-2 text-2xl font-bold">{t('heading')}</h3>
               <p className="text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_two')}
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <PaletteIcon className="mb-4 size-12 text-[#EC4899]" />
-              <h3 className="mb-2 text-2xl font-bold">Design</h3>
+              <h3 className="mb-2 text-2xl font-bold">{t('heading_two')}</h3>
               <p className="text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_three')}
               </p>
