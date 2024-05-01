@@ -6,26 +6,26 @@ export function AboutUs() {
   const t = useTranslations('About');
   return (
     <>
-      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[rgb(19,94,32)]">
+      <section className="animate-fade-in-down relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[rgb(19,94,32)]">
         <div className="container flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
           <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl">
             maybe
           </h1>
-          <p className="mb-8 max-w-3xl text-xl md:text-2xl">
+          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
             {t('about_paragraph')}
           </p>
           <div className="flex gap-4">
             <Button
               size="lg"
               variant="ghost"
-              className="border-black-500 text-1xl border px-5 py-7"
+              className="animate-fade-in-up border-black-500 text-1xl border px-5 py-7"
             >
               Learn More
             </Button>
             <Button
               size="lg"
               variant="solid"
-              className="border-black-500 text-1xl border px-5 py-7"
+              className="animate-fade-in-up border-black-500 text-1xl border px-5 py-7"
             >
               Contact Us
             </Button>
@@ -51,21 +51,21 @@ export function AboutUs() {
             <div className="flex flex-col items-center text-center">
               <RocketIcon className="mb-4 size-12 text-[#6366F1]" />
               <h3 className="mb-2 text-2xl font-bold">{t('heading')}</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="animate-fade-in-up text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_two')}
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <PaletteIcon className="mb-4 size-12 text-[#EC4899]" />
               <h3 className="mb-2 text-2xl font-bold">{t('heading_two')}</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="animate-fade-in-down text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_three')}
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <CodeIcon className="mb-4 size-12 text-[#34D399]" />
               <h3 className="mb-2 text-2xl font-bold">{t('heading_three')}</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="animate-fade-in-down text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_four')}
               </p>
             </div>
@@ -76,16 +76,19 @@ export function AboutUs() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
-              <h2 className="mb-4 text-4xl font-bold">
+              <h2 className="animate-fade-in-down mb-4 text-4xl font-bold">
                 {t('paragraph_heading')}
               </h2>
-              <p className="mb-8 text-gray-500 dark:text-gray-400">
+              <p className="animate-fade-in-down mb-8 text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_five')}
               </p>
-              <p className="mb-8 text-gray-500 dark:text-gray-400">
+              <p className="animate-fade-in-down mb-8 text-gray-500 dark:text-gray-400">
                 {t('about_paragraph_six')}
               </p>
-              <Button variant="ghost" className="border border-black text-2xl">
+              <Button
+                variant="ghost"
+                className="animate-fade-in-down border border-black text-2xl"
+              >
                 Meet the Team
               </Button>
             </div>
@@ -94,7 +97,7 @@ export function AboutUs() {
                 alt="About"
                 className="rounded-lg shadow-lg"
                 height="400"
-                src="/placeholder.svg"
+                src={t('imageUrl')}
                 style={{
                   aspectRatio: '500/400',
                   objectFit: 'cover',

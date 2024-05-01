@@ -47,7 +47,8 @@
     "heading_two": "Design",
     "heading_three": "Development",
     "paragraph_heading": "Our Story",
-    "paragraph": "some content"
+    "paragraph": "some about us content",
+    "imageUrl": "#"
   },
   "Portfolio": {
     "meta_title": "Portfolio",
