@@ -1,42 +1,29 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import React, { useRef } from 'react';
+import React from 'react';
 
-import useIntersectionObserver from '../../../../../hooks/useIntersectionObserver';
-
-const Hero: React.FC = () => {
+export default function Hero() {
   const t = useTranslations('Index');
-  const ref = useRef<HTMLParagraphElement>(null);
-  const isVisible = useIntersectionObserver(ref, { threshold: 0.1 });
 
   return (
     <section className="w-full py-12">
       <div className="container mt-20 px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center md:space-y-8 lg:grid lg:grid-cols-2 lg:items-start lg:justify-between xl:space-y-10">
           <div className="space-y-2">
-            <div className="animate-fade-in-down mt-20 inline rounded-lg bg-gray-100 px-3 py-1 text-sm font-semibold dark:bg-gray-800">
+            <div className="animate-fade-in-up mt-20 inline rounded-lg bg-gray-100 px-3 py-1 text-sm font-semibold dark:bg-gray-800">
               {t('label')}
             </div>
             <h1 className="animate-fade-in-up text-4xl font-bold text-gray-900">
               {t('heading')}
             </h1>
-            <p
-              ref={ref}
-              className={`${isVisible ? 'animate-fade-in' : 'opacity-0'} mt-20 max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl`}
-            >
+            <p className="animate-fade-in-up max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
               {t('paragraph_one')}
             </p>
-            <p
-              ref={ref}
-              className={`${isVisible ? 'animate-fade-in' : 'opacity-0'} mt-20 max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl`}
-            >
+            <p className="animate-fade-in-up max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
               {t('paragraph_two')}
             </p>
-            <p
-              ref={ref}
-              className={`${isVisible ? 'animate-fade-in' : 'opacity-0'} mt-20 max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl`}
-            >
+            <p className="animate-fade-in-up max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
               {t('paragraph_three')}
             </p>
           </div>
@@ -46,7 +33,7 @@ const Hero: React.FC = () => {
               <img
                 alt="Hero"
                 src={t('hero_image_url')}
-                className="animate-fade-in"
+                className="animate-fade-in-up"
               />
             </div>
           </div>
@@ -54,4 +41,4 @@ const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
+}

@@ -95,14 +95,13 @@ export function AboutUs() {
             <div className="flex items-center justify-center">
               <img
                 alt="About"
-                className="rounded-lg shadow-lg"
-                height="400"
+                height="600"
                 src={t('imageUrl')}
                 style={{
                   aspectRatio: '500/400',
                   objectFit: 'cover',
                 }}
-                width="500"
+                width="800"
               />
             </div>
           </div>
