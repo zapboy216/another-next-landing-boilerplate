@@ -8,28 +8,21 @@ export function AboutUs() {
     <>
       <section className="animate-fade-in-down relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[rgb(19,94,32)]">
         <div className="container flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl">
-            maybe
+          <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-3xl">
+            {t('splash_heading')}
           </h1>
           <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
             {t('about_paragraph')}
           </p>
-          <div className="flex gap-4">
-            <Button
-              size="lg"
-              variant="ghost"
-              className="animate-fade-in-up border-black-500 text-1xl border px-5 py-7"
-            >
-              Learn More
-            </Button>
-            <Button
-              size="lg"
-              variant="solid"
-              className="animate-fade-in-up border-black-500 text-1xl border px-5 py-7"
-            >
-              Contact Us
-            </Button>
-          </div>
+          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+            {t('about_paragraph_two')}
+          </p>
+          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+            {t('about_paragraph_three')}
+          </p>
+          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+            {t('about_paragraph_four')}
+          </p>
         </div>
         <div className="absolute inset-0 -z-10 opacity-20">
           <img
