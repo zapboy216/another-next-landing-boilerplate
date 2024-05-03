@@ -7,6 +7,21 @@ export function AboutUs() {
   const t = useTranslations('About');
   return (
     <>
+      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-3xl">
+        {t('splash_heading')}
+      </h1>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph')}
+      </p>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph_two')}
+      </p>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph_three')}
+      </p>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph_four')}
+      </p>
       <section
         className="animate-fade-in-down relative h-[600px] w-full overflow-hidden bg-cover bg-center"
         style={{
@@ -15,30 +30,14 @@ export function AboutUs() {
       >
         <div
           className="container m-10 flex h-full flex-col items-center justify-center px-1 text-center text-white md:px-2"
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, .1)', // Adjust transparency as needed
-            backdropFilter: 'blur(2px)', // Adjust blur radius as needed
-            borderRadius: '20px', // Optional: adds rounded corners
-            padding: '1rem', // Optional: adjusts padding
-            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Optional: adds subtle shadow for depth
-          }}
-        >
-          <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-3xl">
-            {t('splash_heading')}
-          </h1>
-          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-            {t('about_paragraph')}
-          </p>
-          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-            {t('about_paragraph_two')}
-          </p>
-          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-            {t('about_paragraph_three')}
-          </p>
-          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-            {t('about_paragraph_four')}
-          </p>
-        </div>
+          // style={{
+          //   backgroundColor: 'rgba(255, 255, 255, .1)', // Adjust transparency as needed
+          //   backdropFilter: 'blur(2px)', // Adjust blur radius as needed
+          //   borderRadius: '20px', // Optional: adds rounded corners
+          //   padding: '1rem', // Optional: adjusts padding
+          //   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Optional: adds subtle shadow for depth
+          // }}
+        />
       </section>
       <section className="bg-gray-100 py-20 dark:bg-gray-800">
         <div className="container px-4 md:px-6">
