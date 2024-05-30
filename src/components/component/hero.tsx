@@ -18,7 +18,7 @@ export default function Hero() {
               {t('heading')}
             </h1>
             <p className="animate-fade-in-up max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
-              {t('paragraph_one')}
+              {t('paragraph_two')}
             </p>
             <p className="animate-fade-in-up max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
               {t('paragraph_two')}
