@@ -1,3 +1,4 @@
+// AboutUs.tsx
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/ui/button';
@@ -6,44 +7,37 @@ export function AboutUs() {
   const t = useTranslations('About');
   return (
     <>
-      <section className="animate-fade-in-down relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-[#6366F1] to-[rgb(19,94,32)]">
-        <div className="container flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl">
-            maybe
-          </h1>
-          <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-            {t('about_paragraph')}
-          </p>
-          <div className="flex gap-4">
-            <Button
-              size="lg"
-              variant="ghost"
-              className="animate-fade-in-up border-black-500 text-1xl border px-5 py-7"
-            >
-              Learn More
-            </Button>
-            <Button
-              size="lg"
-              variant="solid"
-              className="animate-fade-in-up border-black-500 text-1xl border px-5 py-7"
-            >
-              Contact Us
-            </Button>
-          </div>
-        </div>
-        <div className="absolute inset-0 -z-10 opacity-20">
-          <img
-            alt="Background"
-            className="size-full object-cover"
-            height="800"
-            src="#"
-            style={{
-              aspectRatio: '1600/800',
-              objectFit: 'cover',
-            }}
-            width="1600"
-          />
-        </div>
+      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-3xl">
+        {t('splash_heading')}
+      </h1>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph')}
+      </p>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph_two')}
+      </p>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph_three')}
+      </p>
+      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
+        {t('about_paragraph_four')}
+      </p>
+      <section
+        className="animate-fade-in-down relative h-[600px] w-full overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${t('backgroundUrl')}')`,
+        }}
+      >
+        <div
+          className="container m-10 flex h-full flex-col items-center justify-center px-1 text-center text-white md:px-2"
+          // style={{
+          //   backgroundColor: 'rgba(255, 255, 255, .1)', // Adjust transparency as needed
+          //   backdropFilter: 'blur(2px)', // Adjust blur radius as needed
+          //   borderRadius: '20px', // Optional: adds rounded corners
+          //   padding: '1rem', // Optional: adjusts padding
+          //   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Optional: adds subtle shadow for depth
+          // }}
+        />
       </section>
       <section className="bg-gray-100 py-20 dark:bg-gray-800">
         <div className="container px-4 md:px-6">
