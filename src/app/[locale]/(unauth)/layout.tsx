@@ -26,26 +26,25 @@ export default function Layout(props: { children: React.ReactNode }) {
             </Link>
           </li>
           <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
+            <Link href="/about/">
+              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
+                {t('about_link')}
+              </span>
+            </Link>
+          </li>
+          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
+            <Link href="/about/">
+              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
+                {t('about_link')}
+              </span>
+            </Link>
+          </li>
+          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
             <Link href="/guestbook/">
               <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
                 {t('guestbook_link')}
               </span>
             </Link>
-          </li>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/portfolio/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('portfolio_link')}
-              </span>
-            </Link>
-          </li>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <a
-              className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900"
-              href="https://github.com/zapboy216"
-            >
-              GitHub
-            </a>
           </li>
         </>
       }
