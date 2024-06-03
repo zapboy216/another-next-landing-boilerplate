@@ -1,7 +1,14 @@
-// src/app/index/page.tsx
+// app/page.tsx
+import React from 'react';
 
-import Hero from '@/components/component/hero';
+import Carousel from '@/components/Carousel/Carousel';
 
-export default function Index() {
-  return <Hero />;
-}
+const HomePage: React.FC = () => {
+  return (
+    <main>
+      <Carousel />
+    </main>
+  );
+};
+
+export default HomePage;
