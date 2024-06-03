@@ -1,6 +1,11 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
   @layer base {
     :root {
@@ -126,11 +131,7 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
 
 
   
