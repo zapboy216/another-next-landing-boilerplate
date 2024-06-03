@@ -61,7 +61,7 @@ const Carousel: React.FC = () => {
             />
           </div>
           <div
-            className="absolute inset-0 mx-10 bg-black px-20"
+            className="absolute inset-0 mx-10 bg-black"
             style={{ opacity: overlayOpacity / 10 }}
           />
           <div className="absolute inset-0 flex items-center justify-center">
