@@ -4,12 +4,12 @@
     "about_link": "About",
     "guestbook_link": "Guestbook",
     "portfolio_link": "Portfolio",
-    "sign_in_link": "Sign in"
+    "sign_in_link": "Sign in",
+    "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
     "description": "Dinan Web Development",
-    "made_with": "Made with",
-    "sign_up_link": "Sign up"
+    "made_with": "Made with"
   },
   "Index": {
     "meta_title": "Dinan Web Development",
