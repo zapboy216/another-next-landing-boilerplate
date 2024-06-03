@@ -18,9 +18,8 @@ const BaseTemplate = (props: {
   };
 
   return (
-    <div className="w-full px-1 text-gray-700 antialiased">
+    <div className=" text-gray-700 antialiased">
       <header className="border-b border-gray-300">
-        <h1 className="text-3xl font-bold text-gray-900">{AppConfig.name}</h1>
         <button className="block p-2 lg:hidden" onClick={toggleMobileMenu}>
           ☰
         </button>
