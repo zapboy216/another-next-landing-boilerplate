@@ -1,109 +1,6 @@
-// AboutUs.tsx
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/ui/button';
-
-export function AboutUs() {
-  const t = useTranslations('About');
-  return (
-    <>
-      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-3xl">
-        {t('splash_heading')}
-      </h1>
-      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-        {t('about_paragraph')}
-      </p>
-      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-        {t('about_paragraph_two')}
-      </p>
-      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-        {t('about_paragraph_three')}
-      </p>
-      <p className="animate-fade-in-up mb-8 max-w-3xl text-xl md:text-2xl">
-        {t('about_paragraph_four')}
-      </p>
-      <section
-        className="animate-fade-in-down relative h-[600px] w-full overflow-hidden bg-cover bg-center"
-        style={{
-          backgroundImage: `url('${t('backgroundUrl')}')`,
-        }}
-      >
-        <div
-          className="container m-10 flex h-full flex-col items-center justify-center px-1 text-center text-white md:px-2"
-          // style={{
-          //   backgroundColor: 'rgba(255, 255, 255, .1)', // Adjust transparency as needed
-          //   backdropFilter: 'blur(2px)', // Adjust blur radius as needed
-          //   borderRadius: '20px', // Optional: adds rounded corners
-          //   padding: '1rem', // Optional: adjusts padding
-          //   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Optional: adds subtle shadow for depth
-          // }}
-        />
-      </section>
-      <section className="bg-gray-100 py-20 dark:bg-gray-800">
-        <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center text-center">
-              <RocketIcon className="mb-4 size-12 text-[#6366F1]" />
-              <h3 className="mb-2 text-2xl font-bold">{t('heading')}</h3>
-              <p className="animate-fade-in-up text-gray-500 dark:text-gray-400">
-                {t('about_paragraph_two')}
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <PaletteIcon className="mb-4 size-12 text-[#EC4899]" />
-              <h3 className="mb-2 text-2xl font-bold">{t('heading_two')}</h3>
-              <p className="animate-fade-in-down text-gray-500 dark:text-gray-400">
-                {t('about_paragraph_three')}
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <CodeIcon className="mb-4 size-12 text-[#34D399]" />
-              <h3 className="mb-2 text-2xl font-bold">{t('heading_three')}</h3>
-              <p className="animate-fade-in-down text-gray-500 dark:text-gray-400">
-                {t('about_paragraph_four')}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="py-20">
-        <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div>
-              <h2 className="animate-fade-in-down mb-4 text-4xl font-bold">
-                {t('paragraph_heading')}
-              </h2>
-              <p className="animate-fade-in-down mb-8 text-gray-500 dark:text-gray-400">
-                {t('about_paragraph_five')}
-              </p>
-              <p className="animate-fade-in-down mb-8 text-gray-500 dark:text-gray-400">
-                {t('about_paragraph_six')}
-              </p>
-              <Button
-                variant="ghost"
-                className="animate-fade-in-down border border-black text-2xl"
-              >
-                Meet the Team
-              </Button>
-            </div>
-            <div className="flex items-center justify-center">
-              <img
-                alt="About"
-                height="600"
-                src={t('imageUrl')}
-                style={{
-                  aspectRatio: '500/400',
-                  objectFit: 'cover',
-                }}
-                width="800"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
 
 function CodeIcon(props) {
   return (
@@ -167,5 +64,76 @@ function RocketIcon(props) {
       <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
       <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
     </svg>
+  );
+}
+
+export function AboutUs() {
+  const t = useTranslations('About');
+
+  return (
+    <>
+      <section className="bg-gray-100 py-20 dark:bg-gray-800">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <RocketIcon className="mb-4 size-12 text-[#6366F1]" />
+              <h3 className="mb-2 text-2xl font-bold">{t('heading')}</h3>
+              <p className="animate-fade-in-up text-gray-500 dark:text-gray-400">
+                {t('about_paragraph_two')}
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <PaletteIcon className="mb-4 size-12 text-[#EC4899]" />
+              <h3 className="mb-2 text-2xl font-bold">{t('heading_two')}</h3>
+              <p className="animate-fade-in-down text-gray-500 dark:text-gray-400">
+                {t('about_paragraph_three')}
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <CodeIcon className="mb-4 size-12 text-[#34D399]" />
+              <h3 className="mb-2 text-2xl font-bold">{t('heading_three')}</h3>
+              <p className="animate-fade-in-down text-gray-500 dark:text-gray-400">
+                {t('about_paragraph_four')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div>
+              <h2 className="animate-fade-in-down mb-4 text-4xl font-bold">
+                {t('paragraph_heading')}
+              </h2>
+              <p className="animate-fade-in-down mb-8 text-gray-500 dark:text-gray-400">
+                {t('about_paragraph_five')}
+              </p>
+              <p className="animate-fade-in-down mb-8 text-gray-500 dark:text-gray-400">
+                {t('about_paragraph_six')}
+              </p>
+              <Button
+                variant="ghost"
+                className="animate-fade-in-down border border-black text-2xl"
+              >
+                {t('button_text')}
+              </Button>
+            </div>
+            <div className="flex items-center justify-center">
+              <img
+                alt="About"
+                height="600"
+                src={t('imageUrl')}
+                style={{
+                  aspectRatio: '500/400',
+                  objectFit: 'cover',
+                }}
+                width="800"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
