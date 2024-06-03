@@ -1,16 +1,14 @@
 'use client';
 
+import { Link } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 import { AppConfig } from '@/utils/AppConfig';
 
-const BaseTemplate = (props: {
-  leftNav: React.ReactNode;
-  rightNav?: React.ReactNode;
-  children: React.ReactNode;
-}) => {
-  const t = useTranslations('BaseTemplate');
+const BaseTemplate = (props: { children: React.ReactNode }) => {
+  const t = useTranslations('RootLayout');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -29,13 +27,72 @@ const BaseTemplate = (props: {
         >
           <nav>
             <ul className="flex flex-col items-center gap-y-4 text-xl lg:flex-row lg:gap-x-10">
-              {props.leftNav}
+              <li className="ml-20">
+                <Link
+                  href="/"
+                  className="border-none text-gray-700 hover:text-gray-900"
+                >
+                  {t('home_link')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about/"
+                  className="border-none text-gray-700 hover:text-gray-900"
+                >
+                  {t('about_link')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guestbook/"
+                  className="border-none text-gray-700 hover:text-gray-900"
+                >
+                  {t('guestbook_link')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/portfolio/"
+                  className="border-none text-gray-700 hover:text-gray-900"
+                >
+                  {t('portfolio_link')}
+                </Link>
+              </li>
+              <li>
+                <a
+                  className="border-none text-gray-700 hover:text-gray-900"
+                  href="#"
+                >
+                  GitHub
+                </a>
+              </li>
             </ul>
           </nav>
 
           <nav>
             <ul className="flex flex-col items-center gap-y-4 text-xl lg:flex-row lg:gap-x-5">
-              {props.rightNav}
+              <li>
+                <Link
+                  href="/sign-in/"
+                  className="border-none text-gray-700 hover:text-gray-900"
+                >
+                  {t('sign_in_link')}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/sign-up/"
+                  className="border-none text-gray-700 hover:text-gray-900"
+                >
+                  {t('sign_up_link')}
+                </Link>
+              </li>
+
+              <li>
+                <LocaleSwitcher />
+              </li>
             </ul>
           </nav>
         </div>
