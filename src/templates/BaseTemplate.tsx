@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-import HamburgerMenu from '@/components/ui/HamburgerMenu';
 import { AppConfig } from '@/utils/AppConfig';
 
 const BaseTemplate = (props: {
@@ -12,37 +11,42 @@ const BaseTemplate = (props: {
   children: React.ReactNode;
 }) => {
   const t = useTranslations('BaseTemplate');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-    <div className="w-full px-20 text-gray-700 antialiased">
-      <div className="mx-auto max-w-screen-md lg:max-w-full">
-        <header className="px-10">
-          <div className="animate-fade-in pt-8">
-            <h1 className="text-4xl font-bold text-gray-900">
-              {AppConfig.name}
-            </h1>
-          </div>
-          <div className="flex items-center justify-between">
-            <HamburgerMenu isOpen={isMenuOpen} toggle={toggleMenu} />
-            <nav className={`${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
-              <ul className="flex flex-col gap-x-1 text-xl lg:flex-row">
-                {props.leftNav}
-              </ul>
-            </nav>
+    <div className="w-full px-1 text-gray-700 antialiased">
+      <header className="border-b border-gray-300">
+        <h1 className="text-3xl font-bold text-gray-900">{AppConfig.name}</h1>
+        <button className="block p-2 lg:hidden" onClick={toggleMobileMenu}>
+          ☰
+        </button>
 
-            <nav className="hidden lg:block">
-              <ul className="flex flex-wrap gap-x-1 text-xl">
-                {props.rightNav}
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <div
+          className={`justify-between lg:flex ${isMobileMenuOpen ? 'block' : 'hidden'}`}
+        >
+          <nav>
+            <ul className="flex flex-col items-center gap-y-4 text-xl lg:flex-row lg:gap-x-10">
+              {props.leftNav}
+            </ul>
+          </nav>
 
-        <main>{props.children}</main>
-      </div>
+          <nav>
+            <ul className="flex flex-col items-center gap-y-4 text-xl lg:flex-row lg:gap-x-5">
+              {props.rightNav}
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>{props.children}</main>
+
+      <footer className="border-t border-gray-300 py-8 text-center text-sm">
+        © Copyright {new Date().getFullYear()} {AppConfig.name}.
+      </footer>
     </div>
   );
 };

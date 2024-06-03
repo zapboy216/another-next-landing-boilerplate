@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -11,62 +13,69 @@ export default function Layout(props: { children: React.ReactNode }) {
     <BaseTemplate
       leftNav={
         <>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('home_link')}
-              </span>
+          <li className="ml-20">
+            <Link
+              href="/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('home_link')}
             </Link>
           </li>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/about/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('about_link')}
-              </span>
+          <li>
+            <Link
+              href="/about/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('about_link')}
             </Link>
           </li>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/about/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('about_link')}
-              </span>
+          <li>
+            <Link
+              href="/guestbook/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('guestbook_link')}
             </Link>
           </li>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/about/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('about_link')}
-              </span>
+          <li>
+            <Link
+              href="/portfolio/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('portfolio_link')}
             </Link>
           </li>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/guestbook/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('guestbook_link')}
-              </span>
-            </Link>
+          <li>
+            <a
+              className="border-none text-gray-700 hover:text-gray-900"
+              href="https://github.com/ixartz/Next-js-Boilerplate"
+            >
+              GitHub
+            </a>
           </li>
         </>
       }
       rightNav={
         <>
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/sign-in/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('sign_in_link')}
-              </span>
+          <li>
+            <Link
+              href="/sign-in/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('sign_in_link')}
             </Link>
           </li>
 
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
-            <Link href="/sign-up/">
-              <span className="block cursor-pointer px-6 py-3 text-gray-700 transition-colors hover:text-gray-900">
-                {t('sign_up_link')}
-              </span>
+          <li>
+            <Link
+              href="/sign-up/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('sign_up_link')}
             </Link>
           </li>
 
-          <li className="rounded-md bg-white shadow-lg hover:bg-gray-100">
+          <li>
             <LocaleSwitcher />
           </li>
         </>
