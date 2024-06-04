@@ -1,9 +1,9 @@
 {
   "RootLayout": {
-    "home_link": "YOUR ATTORNEYS",
+    "home_link": "THE ATTORNEYS",
     "about_link": "PRACTICE AREAS",
     "guestbook_link": "GUESTBOOK",
-    "portfolio_link": "RESULTS",
+    "results_link": "RESULTS",
     "sign_in_link": "SIGN IN",
     "sign_up_link": "SIGN UP"
   },
@@ -12,15 +12,15 @@
     "made_with": "Made with"
   },
   "Index": {
-    "meta_title": "Dinan Web Development",
-    "meta_description": "Freelance web developers in South Florida",
+    "meta_title": "Boca Boca Law ",
+    "meta_description": "a law firm example created by Dinan Freelance web developers in South Florida",
     "hero_image_url": "https://storage.googleapis.com/dinan/dinanweb/med4.png",
-    "paragraph_one": "Innovative Web Solutions, Exceptional Expertise",
+    "heading": "",
+    "paragraph_one": "ILorem ipsum dolor sit amet",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "label": "Introducing",
-    "heading": "A Freelance Software Development Firm"
+    "label": "Introducing"
   },
   "Guestbook": {
     "meta_title": "Guestbook",

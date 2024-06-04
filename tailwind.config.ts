@@ -19,6 +19,10 @@ const config = {
     },
     extend: {
       colors: {
+        height: {
+          screen: '100vh',
+        },
+        charcoal: '#333',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

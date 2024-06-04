@@ -14,7 +14,7 @@ const BaseTemplate = (props: {
       <div className="mx-10 max-w-screen-md lg:max-w-full">
         <header className="border-none">
           <div className="pb-8 pt-16">
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-4xl font-bold text-gray-900">
               {AppConfig.name}
             </h1>
             <h2 className="text-xl">{t('description')}</h2>

@@ -40,7 +40,7 @@ export default function Layout(props: { children: React.ReactNode }) {
               href="/portfolio/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
-              {t('portfolio_link')}
+              {t('results_link')}
             </Link>
           </li>
           <li>
