@@ -4,7 +4,7 @@ const localePrefix: LocalePrefix = 'as-needed';
 
 // FIXME: Update this configuration file based on your project information
 export const AppConfig = {
-  name: 'BocaBoca LegalFirm',
+  name: 'BocaBoca LawFirm',
   locales: ['en', 'fr', 'es'],
   defaultLocale: 'en',
   localePrefix,
