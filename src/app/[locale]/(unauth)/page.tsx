@@ -27,15 +27,15 @@ const HomePage: React.FC = () => {
         <div className="container relative z-20 mx-auto flex h-full items-center justify-between px-4 md:px-6">
           <div className="max-w-xl space-y-6">
             <h1 className="text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              t('heading')
+              {t('heading')}
             </h1>
-            <p className="text-lg text-gray-300 md:text-xl">t('slide1')</p>
+            <p className="text-lg text-gray-300 md:text-xl">{t('slide1')}</p>
             <Link
               href="#"
               className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
               prefetch={false}
             >
-              t('cta')
+              {t('cta')}
             </Link>
           </div>
           <div className="mt-20 hidden md:block">
