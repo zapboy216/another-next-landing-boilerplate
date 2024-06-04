@@ -7,6 +7,12 @@
     "sign_in_link": "Sign in",
     "sign_up_link": "Sign up"
   },
+  "Carousel": {
+    "slide1": "Welcome to our site!",
+    "slide2": "Experience the best",
+    "slide3": "Join us today",
+    "slide4": "Contact us for more"
+  },
   "BaseTemplate": {
     "description": "PERSONAL INJURY LAWYERS",
     "made_with": "Made with"
