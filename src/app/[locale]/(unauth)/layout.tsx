@@ -19,38 +19,38 @@ export default function Layout(props: { children: React.ReactNode }) {
               {t('home_link')}
             </Link>
           </li>
+
           <li>
             <Link
-              href="/cases/"
+              href="/attorneys/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
-              {t('cases_link')}
+              {t('attorneys_link')}
             </Link>
           </li>
           <li>
             <Link
-              href="/guestbook/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('guestbook_link')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/areas/"
+              href="/practiceareas/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
               {t('areas_link')}
             </Link>
           </li>
           <li>
-            <a
+            <Link
+              href="/testimonials/"
               className="border-none text-gray-700 hover:text-gray-900"
-              href="/contact/"
             >
-              CONTACT
-            </a>
+              {t('testimonials_link')}
+            </Link>
           </li>
+          <Link
+            href="/contact/"
+            className="border-none text-gray-700 hover:text-gray-900"
+          >
+            {t('contact_link')}
+          </Link>
+          <li />
         </>
       }
       rightNav={
