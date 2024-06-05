@@ -1,13 +1,22 @@
-'use client';
+import { getTranslations } from 'next-intl/server';
 
-import LandingPage from '@/components/LandingPage';
+export async function generateMetadata(props: { params: { locale: string } }) {
+  const t = await getTranslations({
+    locale: props.params.locale,
+    namespace: 'Index',
+  });
 
-const HomePage: React.FC = () => {
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
+
+export default function Index() {
   return (
-    <main className="relative h-screen overflow-hidden">
-      <LandingPage />
-    </main>
+    <>
+      <h1>Hello world!</h1>
+      <h2>Hello again</h2>
+    </>
   );
-};
-
-export default HomePage;
+}

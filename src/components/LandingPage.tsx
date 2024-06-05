@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 import BackgroundVideo from './BackgroundVideo';
 import Lawyer from './Lawyer';
+import ServicesSection from './ServicesSection';
 import StaticHeader from './StaticHeader';
 import TextCarousel from './TextCarousel';
 
@@ -19,11 +20,14 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div style={{ position: 'relative', height: '100vh' }}>
-      <BackgroundVideo />
-      <StaticHeader />
-      <TextCarousel currentSlide={currentSlide} />
-      <Lawyer />
+    <div>
+      <div style={{ position: 'relative', height: '100vh' }}>
+        <BackgroundVideo />
+        <StaticHeader />
+        <TextCarousel currentSlide={currentSlide} />
+        <Lawyer />
+      </div>
+      <ServicesSection />
     </div>
   );
 };

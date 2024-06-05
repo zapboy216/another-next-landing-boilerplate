@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HeaderContainer = styled.div`
   position: absolute;
-  top: 20%;
+  top: 15%;
   width: 100%;
   text-align: center;
   color: white;
@@ -18,7 +18,7 @@ const HeaderTitle = styled.h1`
 
 const HeaderParagraph = styled.p`
   margin: 10px 0 0 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 `;
 
 const StaticHeader = () => (
