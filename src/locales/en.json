@@ -116,7 +116,10 @@
     "paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
     "paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
     "paragraph_seven": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "paragraph_eight": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"
+    "paragraph_eight": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "imageUrl1": "#",
+    "imageUrl2": "#",
+    "imageUrl3": "#"
   },
   "Testimonials": {
     "meta_title": "Testimonials",
