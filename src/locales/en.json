@@ -4,7 +4,8 @@
     "cases_link": "RESULTS",
     "areas_link": "PRACTICE AREAS",
     "attorneys_link": "ATTORNEYS",
-    "guestbook_link": "GUESTBOOK"
+    "guestbook_link": "GUESTBOOK",
+    "contact_link": "CONTACT"
   },
   "Attorneys": {
     "ace1": "Abe Lincoln",
@@ -12,11 +13,11 @@
     "ace3": "Alexander Hamilton",
     "ace4": " Oliver Ellsworth",
     "paragraph": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_ace1": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_ace2": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_ace3": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_ace4": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_ace5": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "aceImageURLall": "#",
     "aceImageURL1": "#",
     "aceImageURL2": "#",
@@ -51,9 +52,9 @@
   "Carousel": {
     "heading": "Start a Consultation",
     "cta": "get started",
-    "slide1": "Welcome to our site!",
-    "slide2": "Experience the best",
-    "slide3": "Join us today",
+    "slide1": "Welcome to our Legal site!",
+    "slide2": "Experience the best Lawyers",
+    "slide3": "Consultation available Today",
     "slide4": "Contact us for more"
   },
   "Cases": {
