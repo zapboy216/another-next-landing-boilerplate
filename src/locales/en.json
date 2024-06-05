@@ -10,6 +10,20 @@
     "guestbook_link": "GUESTBOOK",
     "contact_link": "CONTACT"
   },
+  "Carousel": {
+    "splash_heading": "Welcome to this Firm Heading",
+    "heading_cta": "CALL NOW FOR A FREE CONSULTATION",
+    "cta": "get started",
+    "cta2": "Map and Driving Directions",
+    "slide1": "Welcome to our Legal site!",
+    "slide2": "Experience the best Lawyers",
+    "slide3": "Consultation available Today",
+    "slide4": "Contact us for more",
+    "carouselImageUrl1": "#",
+    "carouselImageUrl2": "#",
+    "carouselImageUrl3": "#",
+    "carouselImageUrl4": "#"
+  },
   "Index": {
     "meta_title": "Boca Boca Law Firm ",
     "meta_description": "a law firm example created by Dinan Freelance web developers in South Florida",
@@ -32,54 +46,6 @@
     "txt-slide2": "Contact florida's best Lawyers",
     "txt-slide3": "get that Consultation Today before",
     "txt-slide4": "Contact us for a meaningful consultation"
-  },
-  "PracticeAreas": {
-    "heading": "heading",
-    "heading2": "heading of some sort",
-    "presentation": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
-    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "paragraph_seven": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "paragraph_eight": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"
-  },
-  "Guestbook": {
-    "meta_title": "Guestbook",
-    "meta_description": "An example of CRUD operation",
-    "database_powered_by": "Database powered by",
-    "loading_guestbook": "Loading..."
-  },
-  "GuestbookForm": {
-    "username": "Username",
-    "body": "Body",
-    "save": "Save"
-  },
-  "Testimonials": {
-    "meta_title": "Testimonials",
-    "meta_description": "Cases page description",
-    "cases_paragraph": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "cases_paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "cases_paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "cases_paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "cases_paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "cases_paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "splash_heading": "Cases Boca Boca",
-    "cta": "ILorem ipsum",
-    "heading": "Historical",
-    "heading_two": "Legal Experts",
-    "heading_three": "Legendary Lawyers",
-    "paragraph_heading": "Our Story",
-    "paragraph": "some cases content content",
-    "paragraph2": "some cases content content",
-    "paragraph3": "some cases content content",
-    "paragraph4": "some cases content content",
-    "imageUrl1": "#",
-    "imageUrl2": "#",
-    "imageUrl3": "#",
-    "backgroundUrl": "#"
   },
   "Attorneys": {
     "meta_title": "Attorneys",
@@ -139,19 +105,53 @@
     "imageUrl2": "#",
     "imageUrl3": "#"
   },
-  "Carousel": {
-    "splash_heading": "Welcome to this Firm Heading",
-    "heading_cta": "CALL NOW FOR A FREE CONSULTATION",
-    "cta": "get started",
-    "cta2": "Map and Driving Directions",
-    "slide1": "Welcome to our Legal site!",
-    "slide2": "Experience the best Lawyers",
-    "slide3": "Consultation available Today",
-    "slide4": "Contact us for more",
-    "carouselImageUrl1": "#",
-    "carouselImageUrl2": "#",
-    "carouselImageUrl3": "#",
-    "carouselImageUrl4": "#"
+  "PracticeAreas": {
+    "heading": "heading",
+    "heading2": "heading of some sort",
+    "presentation": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
+    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "paragraph_seven": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "paragraph_eight": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"
+  },
+  "Testimonials": {
+    "meta_title": "Testimonials",
+    "meta_description": "Cases page description",
+    "cases_paragraph": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "splash_heading": "Cases Boca Boca",
+    "cta": "ILorem ipsum",
+    "heading": "Historical",
+    "heading_two": "Legal Experts",
+    "heading_three": "Legendary Lawyers",
+    "paragraph_heading": "Our Story",
+    "paragraph": "some cases content content",
+    "paragraph2": "some cases content content",
+    "paragraph3": "some cases content content",
+    "paragraph4": "some cases content content",
+    "imageUrl1": "#",
+    "imageUrl2": "#",
+    "imageUrl3": "#",
+    "backgroundUrl": "#"
+  },
+  "Guestbook": {
+    "meta_title": "Guestbook",
+    "meta_description": "An example of CRUD operation",
+    "database_powered_by": "Database powered by",
+    "loading_guestbook": "Loading..."
+  },
+  "GuestbookForm": {
+    "username": "Username",
+    "body": "Body",
+    "save": "Save"
   },
   "SignIn": {
     "meta_title": "Sign in",
