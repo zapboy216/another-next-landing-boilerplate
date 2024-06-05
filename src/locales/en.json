@@ -25,18 +25,24 @@
     "aceImageURL4": "#"
   },
   "BaseTemplate": {
-    "description": "BOCA BOCA LAW LEGENDARY ATTORNEYS"
+    "description": "BOCA BOCA LAW"
   },
   "Index": {
-    "meta_title": "Boca Boca Law ",
+    "meta_title": "Boca Boca Law Firm ",
     "meta_description": "a law firm example created by Dinan Freelance web developers in South Florida",
     "hero_image_url": "#",
-    "heading": "some lawfirm heading",
+    "splash_heading": "Welcome",
+    "heading": "some clever lawfirm heading",
     "paragraph_one": "ILorem ipsum dolor sit amet",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "label_cta": "Introducing"
+    "label_cta": "Introducing",
+    "phone": "1-867-5309",
+    "txt-slide1": "Welcome to our Legal site!",
+    "txt-slide2": "Contact the best Lawyers",
+    "txt-slide3": "get a Consultation Today",
+    "txt-slide4": "Contact us for a meaningful consultation"
   },
   "Guestbook": {
     "meta_title": "Guestbook",
@@ -67,6 +73,7 @@
     "cases_paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "cases_paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "splash_heading": "Cases Boca Boca",
+    "cta": "ILorem ipsum",
     "heading": "Historical",
     "heading_two": "Legal Experts",
     "heading_three": "Legendary Lawyers",
@@ -88,7 +95,8 @@
     "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
-    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"
+    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "cta": "ILorem ipsum"
   },
   "AreasSlug": {
     "meta_title": "Areas {slug}",
@@ -98,7 +106,8 @@
     "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
-    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"
+    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "cta": "ILorem ipsum"
   },
   "SignIn": {
     "meta_title": "Sign in",
