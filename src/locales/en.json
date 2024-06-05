@@ -31,7 +31,9 @@
     "meta_title": "Boca Boca Law Firm ",
     "meta_description": "a law firm example created by Dinan Freelance web developers in South Florida",
     "hero_image_url": "#",
-    "splash_heading": "Welcome",
+    "backgroundImageUrl": "#",
+    "backgroundVideoUrl": "#",
+    "splash_heading": "Welcome to this Firm Heading",
     "heading": "some clever lawfirm heading",
     "paragraph_one": "ILorem ipsum dolor sit amet",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
@@ -48,7 +50,7 @@
     "meta_title": "Guestbook",
     "meta_description": "An example of CRUD operation",
     "database_powered_by": "Database powered by",
-    "loading_guestbook": "Loading guestbook..."
+    "loading_guestbook": "Loading..."
   },
   "GuestbookForm": {
     "username": "Username",
@@ -56,12 +58,17 @@
     "save": "Save"
   },
   "Carousel": {
+    "splash_heading": "Welcome to this Firm Heading",
     "heading": "Start a Consultation",
     "cta": "get started",
     "slide1": "Welcome to our Legal site!",
     "slide2": "Experience the best Lawyers",
     "slide3": "Consultation available Today",
-    "slide4": "Contact us for more"
+    "slide4": "Contact us for more",
+    "carouselImageUrl1": "#",
+    "carouselImageUrl2": "#",
+    "carouselImageUrl3": "#",
+    "carouselImageUrl4": "#"
   },
   "Cases": {
     "meta_title": "Cases",
