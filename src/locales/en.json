@@ -1,4 +1,7 @@
 {
+  "BaseTemplate": {
+    "description": "BOCA BOCA LAW"
+  },
   "RootLayout": {
     "home_link": "HOME",
     "cases_link": "RESULTS",
@@ -12,20 +15,30 @@
     "ace2": "Clarence Darrow",
     "ace3": "Alexander Hamilton",
     "ace4": " Oliver Ellsworth",
+    "heading": "ILorem ipsum dolor sit amet",
+    "heading1": "ILorem ipsum dolor sit amet",
+    "heading2": "ILorem ipsum dolor sit amet",
+    "heading3": "ILorem ipsum dolor sit amet",
+    "heading4": "ILorem ipsum dolor sit amet",
     "paragraph": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "paragraph_ace1": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph2_ace1": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "paragraph_ace2": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph2_ace2": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "paragraph_ace3": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph2_ace3": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "paragraph_ace4": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "paragraph_ace5": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "aceImageURLall": "#",
+    "paragraph2_ace4": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_aces": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph2_aces": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "aceImageURLall1": "#",
+    "aceImageURLall2": "#",
+    "aceImageURLall3": "#",
+    "aceImageURLall4": "#",
     "aceImageURL1": "#",
     "aceImageURL2": "#",
     "aceImageURL3": "#",
     "aceImageURL4": "#"
-  },
-  "BaseTemplate": {
-    "description": "BOCA BOCA LAW"
   },
   "Index": {
     "meta_title": "Boca Boca Law Firm ",
@@ -38,15 +51,16 @@
     "heading": "some clever lawfirm heading",
     "heading_cta": "CALL NOW FOR A FREE CONSULTATION",
     "label_cta": "Se habla Español",
-    "label_cta1": "",
+    "label_cta1": "Call us today",
+    "label_cta2": "Map and Driving Directions",
     "paragraph_one": "ILorem ipsum dolor sit amet",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
     "phone": "1-867-5309",
     "txt-slide1": "Welcome to our Legal site!",
-    "txt-slide2": "Contact the best Lawyers",
-    "txt-slide3": "get a Consultation Today",
+    "txt-slide2": "Contact florida's best Lawyers",
+    "txt-slide3": "get that Consultation Today before",
     "txt-slide4": "Contact us for a meaningful consultation"
   },
   "Guestbook": {
@@ -64,6 +78,7 @@
     "splash_heading": "Welcome to this Firm Heading",
     "heading_cta": "CALL NOW FOR A FREE CONSULTATION",
     "cta": "get started",
+    "cta2": "Map and Driving Directions",
     "slide1": "Welcome to our Legal site!",
     "slide2": "Experience the best Lawyers",
     "slide3": "Consultation available Today",
@@ -106,7 +121,8 @@
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "cta": "ILorem ipsum"
+    "cta": "ILorem ipsum",
+    "cta2": "Map and Driving Directions"
   },
   "AreasSlug": {
     "meta_title": "Areas {slug}",
