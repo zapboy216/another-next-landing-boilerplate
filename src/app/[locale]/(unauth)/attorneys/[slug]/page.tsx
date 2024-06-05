@@ -25,7 +25,7 @@ export async function generateMetadata(props: IPortfolioDetailProps) {
 }
 
 const PortfolioDetail = (props: IPortfolioDetailProps) => {
-  const t = useTranslations('PortfolioSlug');
+  const t = useTranslations('AttorneysSlug');
 
   return (
     <>

@@ -1,22 +1,10 @@
-import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import React from 'react';
 
-import { AboutUs } from '@/components/component/about-us';
-
-export async function generateMetadata(props: { params: { locale: string } }) {
-  const t = await getTranslations({
-    locale: props.params.locale,
-    namespace: 'About',
-  });
-
-  return {
-    title: t('meta_title'),
-    description: t('meta_description'),
-  };
-}
-
-export default function About() {
-  const t = useTranslations('About');
-
-  return <AboutUs />;
+export default function Testimonials() {
+  return (
+    <>
+      <h1>Testimonials</h1>
+      <h1>HelloWorld!</h1>
+    </>
+  );
 }
