@@ -1,22 +1,29 @@
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
-export async function generateMetadata(props: { params: { locale: string } }) {
-  const t = await getTranslations({
-    locale: props.params.locale,
-    namespace: 'Index',
-  });
+import Landing from '@/components/Landing';
 
-  return {
-    title: t('meta_title'),
-    description: t('meta_description'),
-  };
-}
+const Home: React.FC = () => {
+  const t = useTranslations('Index');
 
-export default function Index() {
-  return (
-    <>
-      <h1>Hello world!</h1>
-      <h2>Hello Index</h2>
-    </>
+  const overlayContent = (
+    <div>
+      <h1 className="text-4xl font-bold">{t('splash_heading')}</h1>
+      <p className="mt-4">{t('splash_heading1')}</p>
+      <button className="mt-8 rounded bg-blue-500 px-4 py-2 text-white">
+        {t('heading_cta')}
+      </button>
+    </div>
   );
-}
+
+  return (
+    <Landing
+      backgroundType="video"
+      backgroundUrl={t('backgroundVideoUrl')}
+      overlayContent={overlayContent}
+      overlayOpacity={0.5}
+    />
+  );
+};
+
+export default Home;

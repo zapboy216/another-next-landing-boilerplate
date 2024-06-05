@@ -1,39 +1,29 @@
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import React from 'react';
 
-export async function generateMetadata(props: { params: { locale: string } }) {
-  const t = await getTranslations({
-    locale: props.params.locale,
-    namespace: 'Attorneys',
-  });
+import Landing from '@/components/Landing';
 
-  return {
-    title: t('meta_title'),
-    description: t('meta_description'),
-  };
-}
-
-const Portfolio = () => {
+const Attorneys: React.FC = () => {
   const t = useTranslations('Attorneys');
 
-  return (
-    <>
-      <p>{t('heading')}</p>
+  const overlayContent = (
+    <div>
+      <h1 className="text-4xl font-bold">{t('splash_heading')}</h1>
+      <p className="mt-4">{t('paragraph')}</p>
+      <button className="mt-8 rounded bg-blue-500 px-4 py-2 text-white">
+        {t('cta')}
+      </button>
+    </div>
+  );
 
-      <div className="grid grid-cols-1 justify-items-start gap-3 md:grid-cols-2 xl:grid-cols-3">
-        {Array.from(Array(6).keys()).map((elt) => (
-          <Link
-            className="hover:text-blue-700"
-            key={elt}
-            href={`/attorneys/${elt}`}
-          >
-            {t('splash_heading', { name: elt })}
-          </Link>
-        ))}
-      </div>
-    </>
+  return (
+    <Landing
+      backgroundType="image"
+      backgroundUrl={t('backgroundUrl')}
+      overlayContent={overlayContent}
+      overlayOpacity={0.5}
+    />
   );
 };
 
-export default Portfolio;
+export default Attorneys;
