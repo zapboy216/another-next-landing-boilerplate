@@ -1,29 +1,23 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import React from 'react';
 
-import Landing from '@/components/Landing';
+export async function generateMetadata(props: { params: { locale: string } }) {
+  const t = await getTranslations({
+    locale: props.params.locale,
+    namespace: 'Attorneys',
+  });
 
-const Attorneys: React.FC = () => {
-  const t = useTranslations('Attorneys');
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
-  const overlayContent = (
-    <div>
-      <h1 className="text-4xl font-bold">{t('splash_heading')}</h1>
-      <p className="mt-4">{t('paragraph')}</p>
-      <button className="mt-8 rounded bg-blue-500 px-4 py-2 text-white">
-        {t('cta')}
-      </button>
-    </div>
-  );
-
+export default function Index() {
   return (
-    <Landing
-      backgroundType="image"
-      backgroundUrl={t('backgroundUrl')}
-      overlayContent={overlayContent}
-      overlayOpacity={0.5}
-    />
+    <>
+      <h1>Hello World!</h1>
+      <h2>Hello World!</h2>
+    </>
   );
-};
-
-export default Attorneys;
+}

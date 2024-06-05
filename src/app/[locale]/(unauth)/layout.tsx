@@ -1,3 +1,5 @@
+// this file:src/app/[locale]/(unauth)/layout.tsx
+
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import React from 'react';
