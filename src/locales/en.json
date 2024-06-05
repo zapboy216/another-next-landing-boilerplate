@@ -1,26 +1,41 @@
 {
   "RootLayout": {
-    "home_link": "ATTORNEYS",
-    "about_link": "PRACTICE AREAS",
-    "guestbook_link": "GUESTBOOK",
-    "results_link": "RESULTS",
-    "sign_in_link": "SIGN IN",
-    "sign_up_link": "SIGN UP"
+    "home_link": "HOME",
+    "cases_link": "RESULTS",
+    "areas_link": "PRACTICE AREAS",
+    "attorneys_link": "ATTORNEYS",
+    "guestbook_link": "GUESTBOOK"
+  },
+  "Attorneys": {
+    "ace1": "Abe Lincoln",
+    "ace2": "Clarence Darrow",
+    "ace3": "Alexander Hamilton",
+    "ace4": " Oliver Ellsworth",
+    "paragraph": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "aceImageURLall": "#",
+    "aceImageURL1": "#",
+    "aceImageURL2": "#",
+    "aceImageURL3": "#",
+    "aceImageURL4": "#"
   },
   "BaseTemplate": {
-    "description": "PERSONAL INJURY ATTORNEYS",
-    "made_with": "Made with"
+    "description": "BOCA BOCA LAW LEGENDARY ATTORNEYS"
   },
   "Index": {
     "meta_title": "Boca Boca Law ",
     "meta_description": "a law firm example created by Dinan Freelance web developers in South Florida",
-    "hero_image_url": "https://storage.googleapis.com/dinan/dinanweb/med4.png",
-    "heading": "lawfirm heading",
+    "hero_image_url": "#",
+    "heading": "some lawfirm heading",
     "paragraph_one": "ILorem ipsum dolor sit amet",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "label": "Introducing"
+    "label_cta": "Introducing"
   },
   "Guestbook": {
     "meta_title": "Guestbook",
@@ -41,43 +56,45 @@
     "slide3": "Join us today",
     "slide4": "Contact us for more"
   },
-  "About": {
-    "meta_title": "About",
-    "meta_description": "About page description",
-    "about_paragraph": "We are a dynamic team of designers, developers and innovators, driven to create exceptional digital experiences.",
-    "about_paragraph_two": "We are constantly pushing the boundaries of what's possible,always seeking new and innovative solutions.",
-    "about_paragraph_three": "Our team of talented designers create visually stunning and user-friendly interfaces.",
-    "about_paragraph_four": "We build robust and scalable applications using the latest technologies and best practices.",
-    "about_paragraph_five": "Our mission is to empower businesses and individuals to achieve their goals through cutting-edge technology and design.",
-    "about_paragraph_six": " helping businesses transform their digital presence and drive growth. Our passionate experts are dedicated to delivering exceptional results, and we take pride in our ability to consistently exceed our clients' expectations",
-    "splash_heading": "About DinanDev and DinanWeb",
-    "heading": "Innovation",
-    "heading_two": "Design",
-    "heading_three": "Development",
+  "Cases": {
+    "meta_title": "Cases",
+    "meta_description": "Cases page description",
+    "cases_paragraph": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_five": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "cases_paragraph_six": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "splash_heading": "Cases Boca Boca",
+    "heading": "Historical",
+    "heading_two": "Legal Experts",
+    "heading_three": "Legendary Lawyers",
     "paragraph_heading": "Our Story",
-    "paragraph": "some about us content",
-    "imageUrl": "https://storage.googleapis.com/dinan/dinanweb/med1.png",
-    "backgroundUrl": "https://storage.googleapis.com/dinan/dinanweb/lrg1.png"
+    "paragraph": "some cases content content",
+    "paragraph2": "some cases content content",
+    "paragraph3": "some cases content content",
+    "paragraph4": "some cases content content",
+    "imageUrl": "#",
+    "imageUrl2": "#",
+    "imageUrl3": "#",
+    "backgroundUrl": "#"
   },
-  "Portfolio": {
-    "meta_title": "Portfolio",
-    "meta_description": "Welcome to my portfolio page",
-    "presentation": "Welcome to my portfolio page! Here you will find a carefully curated collection of my work and accomplishments. Through this portfolio, I'm to showcase my expertise, creativity, and the value I can bring to your projects.",
+  "Areas": {
+    "meta_title": "Practice Areas",
+    "meta_description": "practice areas page",
+    "presentation": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "portfolio_name": "Portfolio {name}",
-    "log_management_powered_by": "Log management powered by",
-    "paragraph_one": "Innovative Web Solutions, Exceptional Expertise",
+    "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"
   },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {slug}",
+  "AreasSlug": {
+    "meta_title": "Areas {slug}",
     "meta_description": "Portfolio {slug} description",
-    "header": "Portfolio {slug}",
-    "content": "Created a set of promotional materials and branding elements for a corporate event. Crafted a visually unified theme, encompassing a logo, posters, banners, and digital assets. Integrated the client's brand identity while infusing it with a contemporary and innovative approach. Garnered favorable responses from event attendees, resulting in a successful event with heightened participant engagement and increased brand visibility.",
-    "error_reporting_powered_by": "Error reporting powered by",
-    "coverage_powered_by": "Code coverage powered by",
-    "paragraph_one": "Innovative Web Solutions, Exceptional Expertise",
+    "header": "Areas {slug}",
+    "content": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam"

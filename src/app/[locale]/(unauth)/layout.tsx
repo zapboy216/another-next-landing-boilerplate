@@ -21,10 +21,10 @@ export default function Layout(props: { children: React.ReactNode }) {
           </li>
           <li>
             <Link
-              href="/about/"
+              href="/cases/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
-              {t('about_link')}
+              {t('cases_link')}
             </Link>
           </li>
           <li>
@@ -37,16 +37,16 @@ export default function Layout(props: { children: React.ReactNode }) {
           </li>
           <li>
             <Link
-              href="/portfolio/"
+              href="/areas/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
-              {t('results_link')}
+              {t('areas_link')}
             </Link>
           </li>
           <li>
             <a
               className="border-none text-gray-700 hover:text-gray-900"
-              href="#"
+              href="/contact/"
             >
               CONTACT
             </a>
