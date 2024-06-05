@@ -50,7 +50,7 @@
   "Attorneys": {
     "meta_title": "Attorneys",
     "meta_description": "practice areas page",
-    "splash_heading": "some clever statement",
+    "splash_heading": "some clever statement ace",
     "ace1": "Abe Lincoln",
     "ace2": "Clarence Darrow",
     "ace3": "Alexander Hamilton",
@@ -92,7 +92,7 @@
     "meta_description": "Attorney {slug} description",
     "header": "Attorney {slug}",
     "content": "slug ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
-    "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",
+    "paragraph_one": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam da",
     "paragraph_two": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     "paragraph_three": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do enim ad minim veniam",
     "paragraph_four": "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam",

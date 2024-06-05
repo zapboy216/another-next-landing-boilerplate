@@ -14,12 +14,12 @@ export async function generateMetadata(props: { params: { locale: string } }) {
   };
 }
 
-const Attorneys = () => {
+const Portfolio = () => {
   const t = useTranslations('Attorneys');
 
   return (
     <>
-      <p>{t('splash_heading')}</p>
+      <p>{t('heading')}</p>
 
       <div className="grid grid-cols-1 justify-items-start gap-3 md:grid-cols-2 xl:grid-cols-3">
         {Array.from(Array(6).keys()).map((elt) => (
@@ -28,7 +28,7 @@ const Attorneys = () => {
             key={elt}
             href={`/attorneys/${elt}`}
           >
-            {t('attorney_name', { name: elt })}
+            {t('splash_heading', { name: elt })}
           </Link>
         ))}
       </div>
@@ -36,4 +36,4 @@ const Attorneys = () => {
   );
 };
 
-export default Attorney;
+export default Portfolio;
