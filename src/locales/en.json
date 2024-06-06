@@ -1,7 +1,7 @@
 {
   "BaseTemplate": {
     "description": "BOCA BOCA LAW",
-    "logo_Url": "#"
+    "logo_Url": "https://storage.googleapis.com/dinan/images/icons/image%20(3).png"
   },
   "RootLayout": {
     "home_link": "HOME",

@@ -1,5 +1,3 @@
-// src/templates/BaseTemplate.tsx
-
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import React from 'react';
@@ -17,20 +15,24 @@ const BaseTemplate = (props: {
     <div className="w-full text-gray-700 antialiased">
       <div className="mx-10 max-w-screen-md lg:max-w-full">
         <header className="border-none">
-          <div className="pb-8 pt-16">
-            <h1 className="text-4xl font-bold text-gray-900">
-              {AppConfig.name}
-            </h1>
-            <h2 className="text-xl">{t('description')}</h2>
-          </div>
-          <div>
-            <Image
-              src={imageUrl}
-              alt="Dummy Attorney"
-              width={400}
-              height={400}
-              className="w-full max-w-xs md:max-w-sm lg:max-w-md"
-            />
+          <div className="flex items-center justify-between pb-8 pt-16">
+            <div>
+              <h1 className="text-4xl font-bold text-gray-900">
+                {AppConfig.name}
+              </h1>
+              <h2 className="text-xl">{t('description')}</h2>
+            </div>
+            <div className="shrink-0">
+              {' '}
+              {/* This div will hold the image and be pushed to the right */}
+              <Image
+                src={t('logo_Url')}
+                alt="logo"
+                width={96}
+                height={96}
+                className="mt-10"
+              />
+            </div>
           </div>
 
           <div className="flex justify-between">

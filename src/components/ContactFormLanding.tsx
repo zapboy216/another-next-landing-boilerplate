@@ -47,7 +47,7 @@ const ContactFormLanding: React.FC<ContactFormLandingProps> = ({
           <h1 className="mb-4 text-4xl font-bold md:text-6xl">
             {splashHeading}
           </h1>
-          <h2 className="mb-8 text-2xl md:text-4xl">{splashHeading1}</h2>
+          <h2 className="mb-8 text-2xl md:text-2xl">{splashHeading1}</h2>
           {paragraphs.map((paragraph) => (
             <p key={paragraph.id} className="mb-4 text-lg md:text-xl">
               {paragraph.text}
