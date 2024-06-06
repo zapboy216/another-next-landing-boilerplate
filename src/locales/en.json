@@ -8,7 +8,9 @@
     "areas_link": "PRACTICE AREAS",
     "testimonials_link": "TESTIMONIALS",
     "guestbook_link": "GUESTBOOK",
-    "contact_link": "CONTACT"
+    "contact_link": "CONTACT",
+    "sign_up_link": "SIGN UP",
+    "sign_in_link": "SIGN IN"
   },
   "Carousel": {
     "splash_heading": "Welcome to Boca Boca Law Firm",
@@ -113,10 +115,13 @@
     "imageUrl3": "#"
   },
   "PracticeAreas": {
+    "meta_title": "Attorneys",
+    "meta_description": "Meet our team of experienced and dedicated lawyers.",
     "heading": "Our Practice Areas",
     "heading2": "Areas of Expertise",
     "heading_cta": "CALL TODAY FOR FREE CONSULTATION",
     "hero_image_url": "https://storage.googleapis.com/dinan/LegalFirm/med228.png",
+    "backgroundVideoUrl": "https://storage.googleapis.com/dinan/videos/AdobeStock_314969901_Video_4K_Preview.mp4",
     "splash_heading1": "EXPERT ATTORNEYS",
     "splash_heading": "FLORIDA'S BEST LAW FIRM",
     "presentation": "We specialize in a wide range of legal services to meet your needs.",
@@ -144,7 +149,7 @@
     "cases_paragraph_six": "We are proud of the positive feedback we have received from our clients.",
     "splash_heading": "Client Testimonials",
     "splash_heading1": "PERSONAL ATTORNEYS",
-    "cta": "Read More",
+    "heading_cta": "Read More",
     "heading": "What Our Clients Say",
     "heading_two": "Awards and Recognitions",
     "heading_three": "Famous Cases Won",
@@ -156,7 +161,7 @@
     "imageUrl1": "#",
     "imageUrl2": "#",
     "imageUrl3": "#",
-    "backgroundUrl": "#"
+    "backgroundVideoUrl": "https://storage.googleapis.com/dinan/videos/AdobeStock_314969901_Video_4K_Preview.mp4"
   },
   "Guestbook": {
     "meta_title": "Guestbook",
