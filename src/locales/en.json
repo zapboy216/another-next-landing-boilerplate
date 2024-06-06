@@ -12,6 +12,23 @@
     "sign_up_link": "SIGN UP",
     "sign_in_link": "SIGN IN"
   },
+  "Contact": {
+    "meta_title": "Contact Us - Boca Boca Law Firm",
+    "meta_description": "Get in touch with Boca Boca Law Firm",
+    "splash_heading": "Contact Boca Boca Law Firm",
+    "splash_heading1": "We are here to help",
+    "paragraph_one": "Fill out the form below to get in touch with us.",
+    "paragraph_two": "Our team will get back to you as soon as possible.",
+    "paragraph_three": "",
+    "paragraph_four": "",
+    "heading_cta": "Submit",
+    "hero_image_url": "https://storage.googleapis.com/dinan/LegalFirm/med228.png",
+    "backgroundVideoUrl": "https://storage.googleapis.com/dinan/videos/AdobeStock_314969901_Video_4K_Preview.mp4",
+    "form_name_label": "Name",
+    "form_email_label": "Email",
+    "form_message_label": "Message",
+    "form_submit_button": "Submit"
+  },
   "Carousel": {
     "splash_heading": "Welcome to Boca Boca Law Firm",
     "heading": "CALL NOW FOR A FREE CONSULTATION",
@@ -46,6 +63,7 @@
     "meta_title": "Attorneys",
     "meta_description": "Meet our team of experienced and dedicated lawyers.",
     "hero_image_url": "https://storage.googleapis.com/dinan/LegalFirm/med228.png",
+    "splash_heading": "FREE CONSULTATION",
     "splash_heading1": "Your Personal Injury Firm",
     "ace1": "Harry Mason",
     "ace2": "Clarence W. Barrow",
