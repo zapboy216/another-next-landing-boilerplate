@@ -1,10 +1,9 @@
-// src/app/[locale]/(unauth)/contact.tsx
+// src/app/[locale]/(unauth)/contact/page.tsx
 
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
-import ContactForm from '@/components/ContactForm';
-import Landing from '@/components/Landing';
+import ContactFormLanding from '@/components/ContactFormLanding';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
@@ -29,16 +28,13 @@ export default function Contact() {
   ];
 
   return (
-    <div>
-      <Landing
-        backgroundVideoUrl={t('backgroundVideoUrl')}
-        splashHeading={t('splash_heading')}
-        splashHeading1={t('splash_heading1')}
-        paragraphs={paragraphs}
-        ctaText={t('heading_cta')}
-        imageUrl={t('hero_image_url')}
-      />
-      <ContactForm />
-    </div>
+    <ContactFormLanding
+      backgroundImageUrl={t('backgroundImageUrl')}
+      splashHeading={t('splash_heading')}
+      splashHeading1={t('splash_heading1')}
+      paragraphs={paragraphs}
+      ctaText={t('heading_cta')}
+      imageUrl={t('hero_image_url')}
+    />
   );
 }

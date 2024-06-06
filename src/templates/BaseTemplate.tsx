@@ -1,5 +1,6 @@
 // src/templates/BaseTemplate.tsx
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
@@ -21,6 +22,15 @@ const BaseTemplate = (props: {
               {AppConfig.name}
             </h1>
             <h2 className="text-xl">{t('description')}</h2>
+          </div>
+          <div>
+            <Image
+              src={imageUrl}
+              alt="Dummy Attorney"
+              width={400}
+              height={400}
+              className="w-full max-w-xs md:max-w-sm lg:max-w-md"
+            />
           </div>
 
           <div className="flex justify-between">

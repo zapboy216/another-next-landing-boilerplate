@@ -1,4 +1,4 @@
-// src/components/Landing.tsx
+// src/components/ContactFormLanding.tsx
 
 import Image from 'next/image';
 import React from 'react';
@@ -10,34 +10,32 @@ interface Paragraph {
   text: string;
 }
 
-interface LandingProps {
-  backgroundVideoUrl: string;
+interface ContactFormLandingProps {
+  backgroundImageUrl: string;
   splashHeading: string;
   splashHeading1: string;
   paragraphs: Paragraph[];
   ctaText: string;
   imageUrl: string;
-  showContactForm?: boolean;
 }
 
-const Landing: React.FC<LandingProps> = ({
-  backgroundVideoUrl,
+const ContactFormLanding: React.FC<ContactFormLandingProps> = ({
+  backgroundImageUrl,
   splashHeading,
   splashHeading1,
   paragraphs,
   ctaText,
   imageUrl,
-  showContactForm = false,
 }) => {
   return (
     <div className="relative min-h-screen w-full overflow-auto">
-      {/* Background Video */}
-      <video
-        className="absolute left-0 top-0 size-full object-cover"
-        src={backgroundVideoUrl}
-        autoPlay
-        loop
-        muted
+      {/* Background Image */}
+      <Image
+        src={backgroundImageUrl}
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute left-0 top-0 size-full"
       />
 
       {/* Overlay */}
@@ -72,13 +70,11 @@ const Landing: React.FC<LandingProps> = ({
           />
         </div>
       </div>
-      {showContactForm && (
-        <div className="relative z-20 mt-8">
-          <ContactForm />
-        </div>
-      )}
+      <div className="relative z-20 mt-8">
+        <ContactForm />
+      </div>
     </div>
   );
 };
 
-export default Landing;
+export default ContactFormLanding;

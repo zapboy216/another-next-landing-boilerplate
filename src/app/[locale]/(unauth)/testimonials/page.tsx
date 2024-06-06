@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
-import Intermediate from '@/components/Intermediate';
 import Landing from '@/components/Landing';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
@@ -29,16 +28,13 @@ export default function Testimonials() {
   ];
 
   return (
-    <>
-      <Landing
-        backgroundVideoUrl={t('backgroundVideoUrl')}
-        splashHeading={t('splash_heading')}
-        splashHeading1={t('splash_heading1')}
-        paragraphs={paragraphs}
-        ctaText={t('heading_cta')}
-        imageUrl={t('hero_image_url')}
-      />
-      <Intermediate />
-    </>
+    <Landing
+      backgroundVideoUrl={t('backgroundVideoUrl')}
+      splashHeading={t('splash_heading')}
+      splashHeading1={t('splash_heading1')}
+      paragraphs={paragraphs}
+      ctaText={t('heading_cta')}
+      imageUrl={t('hero_image_url')}
+    />
   );
 }

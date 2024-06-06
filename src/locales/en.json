@@ -1,6 +1,7 @@
 {
   "BaseTemplate": {
-    "description": "BOCA BOCA LAW"
+    "description": "BOCA BOCA LAW",
+    "logo_Url": "#"
   },
   "RootLayout": {
     "home_link": "HOME",
@@ -27,7 +28,8 @@
     "form_name_label": "Name",
     "form_email_label": "Email",
     "form_message_label": "Message",
-    "form_submit_button": "Submit"
+    "form_submit_button": "Submit",
+    "backgroundImageUrl": "https://storage.googleapis.com/dinan/images/scenes/law/med87.png"
   },
   "Carousel": {
     "splash_heading": "Welcome to Boca Boca Law Firm",
