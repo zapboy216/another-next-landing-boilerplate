@@ -1,5 +1,6 @@
 // src/components/Landing.tsx
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
@@ -24,6 +25,7 @@ const Landing = () => {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
         <h1 className="mb-4 text-4xl font-bold md:text-6xl">
           {t('splash_heading')}
+          <Image src={t('hero_image_url')} width="530" height="800" />
         </h1>
         <h2 className="mb-8 text-2xl md:text-4xl">{t('splash_heading1')}</h2>
         <p className="mb-4 text-lg md:text-xl">{t('paragraph_one')}</p>
