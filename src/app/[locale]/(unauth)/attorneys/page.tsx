@@ -1,5 +1,9 @@
+// src/app/[locale]/(unauth)/attorneys.tsx
+
+import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import React from 'react';
+
+import Landing from '@/components/Landing';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
@@ -13,11 +17,24 @@ export async function generateMetadata(props: { params: { locale: string } }) {
   };
 }
 
-export default function Index() {
+export default function Attorneys() {
+  const t = useTranslations('Attorneys');
+
+  const paragraphs = [
+    { id: '1', text: t('paragraph_one') },
+    { id: '2', text: t('paragraph_two') },
+    { id: '3', text: t('paragraph_three') },
+    { id: '4', text: t('paragraph_four') },
+  ];
+
   return (
-    <>
-      <h1>Hello World!</h1>
-      <h2>Hello World!</h2>
-    </>
+    <Landing
+      backgroundVideoUrl={t('backgroundVideoUrl')}
+      splashHeading={t('splash_heading')}
+      splashHeading1={t('splash_heading1')}
+      paragraphs={paragraphs}
+      ctaText={t('heading_cta')}
+      imageUrl={t('hero_image_url')}
+    />
   );
 }

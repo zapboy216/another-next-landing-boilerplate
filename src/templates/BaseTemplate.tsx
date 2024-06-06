@@ -1,4 +1,4 @@
-// this file : src/templates/BaseTemplate.tsx
+// src/templates/BaseTemplate.tsx
 
 import { useTranslations } from 'next-intl';
 import React from 'react';
@@ -13,7 +13,7 @@ const BaseTemplate = (props: {
   const t = useTranslations('BaseTemplate');
 
   return (
-    <div className="w-full px-1 text-gray-700 antialiased">
+    <div className="w-full text-gray-700 antialiased">
       <div className="mx-10 max-w-screen-md lg:max-w-full">
         <header className="border-none">
           <div className="pb-8 pt-16">
@@ -38,7 +38,7 @@ const BaseTemplate = (props: {
           </div>
         </header>
 
-        <main>{props.children}</main>
+        <main className="min-h-screen">{props.children}</main>
 
         <footer className="py-8 text-center text-sm">
           © Copyright {new Date().getFullYear()} {AppConfig.name}.

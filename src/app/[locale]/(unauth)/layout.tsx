@@ -1,4 +1,4 @@
-// this file:src/app/[locale]/(unauth)/layout.tsx
+// src/app/[locale]/(unauth)/layout.tsx
 
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -22,7 +22,6 @@ export default function Layout(props: { children: React.ReactNode }) {
               {t('home_link')}
             </Link>
           </li>
-
           <li>
             <Link
               href="/attorneys/"
@@ -47,13 +46,14 @@ export default function Layout(props: { children: React.ReactNode }) {
               {t('testimonials_link')}
             </Link>
           </li>
-          <Link
-            href="/contact/"
-            className="border-none text-gray-700 hover:text-gray-900"
-          >
-            {t('contact_link')}
-          </Link>
-          <li />
+          <li>
+            <Link
+              href="/contact/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('contact_link')}
+            </Link>
+          </li>
         </>
       }
       rightNav={
