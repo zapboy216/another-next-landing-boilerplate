@@ -14,7 +14,7 @@
   },
   "Carousel": {
     "splash_heading": "Welcome to Boca Boca Law Firm",
-    "heading_cta": "CALL NOW FOR A FREE CONSULTATION",
+    "heading": "CALL NOW FOR A FREE CONSULTATION",
     "cta": "Get Started",
     "cta2": "Map and Driving Directions",
     "slide1": "Welcome to our Legal site!",
@@ -36,18 +36,11 @@
     "splash_heading1": "PERSONAL INJURY ATTORNEYS",
     "heading": "Your Trusted Legal Advisors",
     "heading_cta": "CALL NOW FOR A FREE CONSULTATION",
-    "label_cta": "Se habla Español",
-    "label_cta1": "Call us today",
-    "label_cta2": "Map and Driving Directions",
     "paragraph_one": "Lorem one ipsum dolor sit amet, consectetur adipiscing elit.",
     "paragraph_two": "Lorem two ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     "paragraph_three": "Lorem three ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     "paragraph_four": "Lorem four ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "phone": "1-867-5309",
-    "txt-slide1": "Welcome to our Legal site!",
-    "txt-slide2": "Contact Florida's best Lawyers",
-    "txt-slide3": "Get that Consultation Today",
-    "txt-slide4": "Contact us for a meaningful consultation"
+    "phone": "1-867-5309"
   },
   "Attorneys": {
     "meta_title": "Attorneys",
