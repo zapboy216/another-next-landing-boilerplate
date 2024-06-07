@@ -38,7 +38,7 @@ const Landing: React.FC<LandingProps> = ({
       />
 
       {/* Overlay */}
-      <div className="absolute left-0 top-0 size-full bg-black opacity-80" />
+      <div className="absolute left-0 top-0 size-full bg-black opacity-60" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center text-white md:flex-row md:text-left">
