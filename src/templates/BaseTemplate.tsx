@@ -1,6 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
 
@@ -10,6 +12,11 @@ const BaseTemplate = (props: {
   children: React.ReactNode;
 }) => {
   const t = useTranslations('BaseTemplate');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <div className="w-full text-gray-700 antialiased">
@@ -23,27 +30,43 @@ const BaseTemplate = (props: {
               <h2 className="text-xl">{t('description')}</h2>
             </div>
             <div className="shrink-0">
-              {' '}
-              {/* This div will hold the image and be pushed to the right */}
               <Image
                 src={t('logo_Url')}
                 alt="logo"
-                width={96}
-                height={96}
-                className="mt-10"
+                width={126}
+                height={126}
+                className="mr-10 mt-10"
               />
+            </div>
+            <div className="lg:hidden">
+              <button
+                onClick={toggleMobileMenu}
+                className="text-gray-900 focus:outline-none"
+              >
+                <svg
+                  className="size-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
 
-          <div className="flex justify-between">
-            <nav>
-              <ul className="flex flex-wrap gap-x-5 text-xl">
+          <div className={`lg:flex ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+            <nav className="flex w-full flex-col lg:flex-row lg:justify-between">
+              <ul className="flex flex-col flex-wrap gap-x-5 text-xl lg:flex-row">
                 {props.leftNav}
               </ul>
-            </nav>
-
-            <nav>
-              <ul className="flex flex-wrap gap-x-5 text-xl">
+              <ul className="flex flex-col flex-wrap gap-x-5 text-xl lg:flex-row">
                 {props.rightNav}
               </ul>
             </nav>

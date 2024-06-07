@@ -4,10 +4,10 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: rgb(185, 158, 158);
 }
 
@@ -216,7 +216,36 @@ html, body {
   font-size: 2.25rem;
 }
 
+@keyframes fade-in-bottom {
+0% {
+  opacity: 0;
+  transform: translateY(120px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+@keyframes fade-in {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.animate-fade-in-bottom {
+animation: fade-in-bottom 1.2s ease-out;
+}
+
+.animate-fade-in {
+animation: fade-in 1.2s ease-out;
+}
 
 
 
-  
+
+
+

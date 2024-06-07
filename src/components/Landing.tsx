@@ -27,7 +27,7 @@ const Landing: React.FC<LandingProps> = ({
   const t = useTranslations('Contact');
 
   return (
-    <div className="relative min-h-screen w-full overflow-auto">
+    <div className="font-montserrat relative min-h-screen w-full overflow-auto">
       {/* Background Video */}
       <video
         className="absolute left-0 top-0 size-full object-cover"
@@ -43,18 +43,23 @@ const Landing: React.FC<LandingProps> = ({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center text-white md:flex-row md:text-left">
         <div className="flex-1">
-          <h1 className="mb-4 text-4xl font-bold md:text-4xl">
+          <h1 className="animate-fade-in-bottom mb-4 text-4xl font-bold md:text-4xl">
             {t('splash_heading')}
           </h1>
-          <h2 className="mb-8 text-2xl md:text-4xl">{t('splash_heading1')}</h2>
+          <h2 className="animate-fade-in-bottom mb-8 text-2xl md:text-4xl">
+            {t('splash_heading1')}
+          </h2>
           {paragraphs.map((paragraph) => (
-            <p key={paragraph.id} className="mb-4 text-lg md:text-xl">
+            <p
+              key={paragraph.id}
+              className="animate-fade-in-bottom mb-4 text-lg md:text-xl"
+            >
               {paragraph.text}
             </p>
           ))}
           <a
-            href="#"
-            className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+            href="./contact"
+            className="animate-fade-in-bottom rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
           >
             {t('heading_cta')}
           </a>
@@ -65,7 +70,7 @@ const Landing: React.FC<LandingProps> = ({
             alt="Dummy Attorney"
             width={400}
             height={400}
-            className="mt-10 w-full max-w-xs md:max-w-sm lg:max-w-md"
+            className="animate-fade-in mt-10 w-full max-w-xs md:max-w-sm lg:max-w-md"
           />
         </div>
       </div>

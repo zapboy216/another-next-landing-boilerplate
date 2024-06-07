@@ -1,7 +1,14 @@
 {
+  "Navigation": {
+    "home": "Home",
+    "attorneys": "Attorneys",
+    "practice_areas": "Practice Areas",
+    "contact": "Contact",
+    "login": "Login"
+  },
   "BaseTemplate": {
     "description": "PERSONAL INJURY ATTORNEYS",
-    "logo_Url": "https://storage.googleapis.com/dinan/images/icons/image%20(3).png"
+    "logo_Url": "https://storage.googleapis.com/dinan/LegalFirm/logoipsum-241.svg"
   },
   "RootLayout": {
     "home_link": "HOME",
