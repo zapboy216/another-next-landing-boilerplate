@@ -155,7 +155,7 @@ const ContactFormLanding: React.FC<ContactFormLandingProps> = ({
             alt="Dummy Attorney"
             width={400}
             height={400}
-            className="w-full max-w-xs md:max-w-sm lg:max-w-md"
+            className="mt-10 w-full max-w-xs md:max-w-sm lg:max-w-md"
           />
         </div>
       </div>
