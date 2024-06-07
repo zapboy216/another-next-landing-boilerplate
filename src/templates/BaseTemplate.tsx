@@ -15,7 +15,7 @@ const BaseTemplate = (props: {
     <div className="w-full text-gray-700 antialiased">
       <div className="mx-10 max-w-screen-md lg:max-w-full">
         <header className="border-none">
-          <div className="flex items-center justify-between pb-8 pt-16">
+          <div className="flex items-center justify-between py-4">
             <div>
               <h1 className="text-4xl font-bold text-gray-900">
                 {AppConfig.name}

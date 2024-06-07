@@ -68,7 +68,7 @@ const ContactFormLanding: React.FC<ContactFormLandingProps> = ({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center text-white md:flex-row md:text-left">
         <div className="flex-1">
-          <h1 className="mb-4 text-2xl font-bold md:text-3xl">
+          <h1 className="mb-4 text-2xl font-bold md:text-2xl">
             {splashHeading}
           </h1>
           <div className="relative z-20 mt-8">
