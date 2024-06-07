@@ -44,7 +44,7 @@ const BaseTemplate = (props: {
                 className="text-gray-900 focus:outline-none"
               >
                 <svg
-                  className="size-6"
+                  className="size-10"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ const BaseTemplate = (props: {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth="3"
                     d="M4 6h16M4 12h16m-7 6h7"
                   />
                 </svg>
