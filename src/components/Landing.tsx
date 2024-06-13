@@ -2,23 +2,51 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
-interface LandingProps {
-  translationsKey: string;
+interface Paragraph {
+  id: string;
+  text: string;
 }
 
-const Landing: React.FC<LandingProps> = ({ translationsKey }) => {
+interface LandingProps {
+  translationsKey: string;
+  backgroundType: 'video' | 'image' | 'svg';
+  backgroundSrc: string;
+}
+
+const Landing: React.FC<LandingProps> = ({
+  translationsKey,
+  backgroundType,
+  backgroundSrc,
+}) => {
   const t = useTranslations(translationsKey);
 
   return (
     <div className="font-montserrat relative min-h-screen w-full overflow-auto">
-      {/* Background Video */}
-      <video
-        className="absolute left-0 top-0 size-full object-cover"
-        src={t('backgroundVideoUrl')}
-        autoPlay
-        loop
-        muted
-      />
+      {/* Background */}
+      {backgroundType === 'video' && (
+        <video
+          className="absolute left-0 top-0 size-full object-cover"
+          src={backgroundSrc}
+          autoPlay
+          loop
+          muted
+        />
+      )}
+      {backgroundType === 'image' && (
+        <Image
+          className="absolute left-0 top-0 size-full object-cover"
+          src={backgroundSrc}
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+        />
+      )}
+      {backgroundType === 'svg' && (
+        <div
+          className="absolute left-0 top-0 size-full object-cover"
+          dangerouslySetInnerHTML={{ __html: backgroundSrc }}
+        />
+      )}
 
       {/* Overlay */}
       <div className="absolute left-0 top-0 size-full bg-black opacity-50" />
