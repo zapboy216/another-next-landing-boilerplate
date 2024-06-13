@@ -1,6 +1,5 @@
 // src/app/[locale]/(unauth)/practiceareas.tsx
 
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 import Landing from '@/components/Landing';
@@ -17,8 +16,6 @@ export async function generateMetadata(props: { params: { locale: string } }) {
   };
 }
 
-export default function PracticeAreas() {
-  const t = useTranslations('PracticeAreas');
-
+export default function Testimonials() {
   return <Landing translationsKey="PracticeAreas" />;
 }
