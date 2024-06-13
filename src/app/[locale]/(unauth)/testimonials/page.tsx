@@ -17,5 +17,5 @@ export async function generateMetadata(props: { params: { locale: string } }) {
 }
 
 export default function Testimonials() {
-  return <Landing translationKey="Testimonials" />;
+  return <Landing translationsKey="Testimonials" />;
 }

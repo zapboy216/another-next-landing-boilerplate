@@ -6,7 +6,7 @@ interface LandingProps {
   translationsKey: string;
 }
 
-const Landing: React.FC<LandingProps> = (
+const Landing: React.FC<LandingProps> = ({ translationsKey }) => {
   const t = useTranslations(translationsKey);
 
   return (
@@ -46,12 +46,9 @@ const Landing: React.FC<LandingProps> = (
               href="./contact"
               className="animate-fade-in-bottom rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
             >
-              <h2 className="animate-fade-in-bottom mb-8 text-2xl md:text-4xl">
-                {t('heading_two')}
-              </h2>
-
-              <p>{t('paragraph_three')}</p>
+              {t('heading_two')}
             </a>
+            <p>{t('paragraph_three')}</p>
             <p>{t('paragraph_four')}</p>
             <p>{t('paragraph_five')}</p>
           </div>
