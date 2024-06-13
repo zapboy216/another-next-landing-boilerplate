@@ -2,36 +2,19 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
-interface Paragraph {
-  id: string;
-  text: string;
-}
-
 interface LandingProps {
-  backgroundVideoUrl: string;
-  splashHeading: string;
-  splashHeading1: string;
-  paragraphs: Paragraph[];
-  ctaText: string;
-  imageUrl: string;
+  translationsKey: string;
 }
 
-const Landing: React.FC<LandingProps> = ({
-  backgroundVideoUrl,
-  splashHeading,
-  splashHeading1,
-  paragraphs,
-  ctaText,
-  imageUrl,
-}) => {
-  const t = useTranslations('Contact');
+const Landing: React.FC<LandingProps> = (
+  const t = useTranslations(translationsKey);
 
   return (
     <div className="font-montserrat relative min-h-screen w-full overflow-auto">
       {/* Background Video */}
       <video
         className="absolute left-0 top-0 size-full object-cover"
-        src={backgroundVideoUrl}
+        src={t('backgroundVideoUrl')}
         autoPlay
         loop
         muted
@@ -43,30 +26,40 @@ const Landing: React.FC<LandingProps> = ({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center text-white md:flex-row md:text-left">
         <div className="flex-1">
-          <h1 className="animate-fade-in-bottom mb-4 text-4xl font-bold md:text-4xl">
-            {t('splash_heading')}
-          </h1>
-          <h2 className="animate-fade-in-bottom mb-8 text-2xl md:text-4xl">
-            {t('splash_heading1')}
-          </h2>
-          {paragraphs.map((paragraph) => (
-            <p
-              key={paragraph.id}
-              className="animate-fade-in-bottom mb-4 text-lg md:text-xl"
-            >
-              {paragraph.text}
+          {/* Glass Panel */}
+          <div className="m-10 rounded-lg bg-white bg-opacity-10 p-8 backdrop-blur-md">
+            <h1 className="animate-fade-in-bottom mb-4 text-4xl font-bold md:text-4xl">
+              {t('splash_heading_one')}
+            </h1>
+            <h2 className="animate-fade-in-bottom mb-8 text-2xl md:text-4xl">
+              {t('splash_heading_one')}
+            </h2>
+
+            <p className="animate-fade-in-bottom mb-4 text-lg md:text-xl">
+              {t('paragraph_one')}
             </p>
-          ))}
-          <a
-            href="./contact"
-            className="animate-fade-in-bottom rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
-          >
-            {t('heading_cta')}
-          </a>
+            <p className="animate-fade-in-bottom mb-4 text-lg md:text-xl">
+              {t('paragraph_two')}
+            </p>
+
+            <a
+              href="./contact"
+              className="animate-fade-in-bottom rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+            >
+              <h2 className="animate-fade-in-bottom mb-8 text-2xl md:text-4xl">
+                {t('heading_two')}
+              </h2>
+
+              <p>{t('paragraph_three')}</p>
+            </a>
+            <p>{t('paragraph_four')}</p>
+            <p>{t('paragraph_five')}</p>
+          </div>
+          {/* End Glass Panel */}
         </div>
         <div className="mt-8 flex-1 md:ml-8 md:mt-0">
           <Image
-            src={imageUrl}
+            src={t('hero_image_url')}
             alt="Dummy Attorney"
             width={400}
             height={400}
